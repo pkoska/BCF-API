@@ -2586,6 +2586,11 @@ components:
           nullable: true
           items:
             $ref: '#/components/schemas/line'
+        markers:
+          type: array
+          nullable: true
+          items:
+            $ref: '#/components/schemas/marker'
         clipping_planes:
           type: array
           nullable: true
@@ -2621,6 +2626,11 @@ components:
           nullable: true
           items:
             $ref: '#/components/schemas/line'
+        markers:
+          type: array
+          nullable: true
+          items:
+            $ref: '#/components/schemas/marker'
         clipping_planes:
           type: array
           nullable: true
@@ -2711,3 +2721,8 @@ components:
       name: $skip
       schema:
         type: string
+    marker:
+      type: object
+      properties:
+        location:
+          $ref: '#/components/schemas/point'
